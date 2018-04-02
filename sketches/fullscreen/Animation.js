@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-   createCanvas(displayWidth, displayHeight, WEBGL);
+   createCanvas(600, 480, WEBGL);
    // button = createButton('toggle');
    // button.mousePressed(togglePlaying);
    //   fft = new p5.FFT();
