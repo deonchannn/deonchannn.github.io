@@ -8,18 +8,14 @@ let song;
 let mic;
 let fft;
 
-function preload() {
-    song = loadSound("Noise.wav");
-}
+
 
 function setup() {
    createCanvas(windowWidth, windowHeight, WEBGL);
-   // frameRate(40);
+
 
    pixelDensity(1);
-   // button = createButton('toggle');
-   // button.mousePressed(togglePlaying);
-   // fft = new p5.FFT();
+
    mic = new p5.AudioIn();
    mic.start();
    fft = new p5.FFT();
