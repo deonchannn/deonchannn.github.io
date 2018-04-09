@@ -37,17 +37,6 @@ function setup() {
 
 }
 
-function togglePlaying() {
-  if( !song.isPlaying()) {
-    song.play();
-    button.html("Pause");
-  } else {
-    song.pause();
-    button.html("Play");
-  }
-
-}
-
 function draw() {
   background(10);
   // analyze amplitude values along the whole frequency domain
@@ -158,9 +147,6 @@ class drawspike {
     this.objRotateX -= this.speedX;
     this.objRotateY -= this.speedY;
     this.objRotateZ -= this.speedZ;
-    // this.angle -= 0.3;
-    // rotateY(this.angle * 0.3);
-    // rotateZ(this.angle * 0.5);
     }
 
   objRotate() {
@@ -172,18 +158,6 @@ class drawspike {
   update(){
     this.f = fill(189);
     this.groupRadius = (height/2) - (height/20);
-    // let speedAmp = 0.2;
-    // this.speedX = random(-1.0,1.0) * speedAmp;
-    // this.speedY = random(-1.0,1.0) * speedAmp;
-    // this.speedZ = random(-1.0,1.0) * speedAmp;
-    // this.objRotateX -= this.speedX;
-    // this.objRotateY -= this.speedY;
-    // this.objRotateZ -= this.speedZ;
-    // rotateX(radians(this.objRotateX));
-    // rotateY(radians(this.objRotateY));
-    // rotateZ(radians(this.objRotateZ));
-
-
   }
 
   lowmove() {
