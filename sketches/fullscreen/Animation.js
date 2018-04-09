@@ -11,7 +11,7 @@ function preload() {
 }
 
 function setup() {
-   createCanvas(600, 480, WEBGL);
+   createCanvas(displayWidth, displayHeight, WEBGL);
    // button = createButton('toggle');
    // button.mousePressed(togglePlaying);
    //   fft = new p5.FFT();
@@ -32,7 +32,7 @@ function togglePlaying() {
 
 }
 function draw() {
-  background(30);
+  background(40);
   let spectrum = fft.analyze();
 
   //grab frequency levels
